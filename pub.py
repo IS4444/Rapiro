@@ -10,7 +10,9 @@ if __name__ == '__main__':
     n = 0
     while not rospy.is_shutdown():
         #n += 1
-        n = input('0~3 >')
+        n = input('0~3 exit444 >')
+        if n == 444:
+            break
         pub.publish(n)
         #rate.sleep()
 
